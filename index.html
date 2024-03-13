@@ -1,14 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockey's-Club</title>
     <!-- daisyui and tailwind cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="font-['Manrope']">
+    <!-- header section start -->
+    <header class="mx-4 md:mx-6 lg:mx-36 my-12">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="text-xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle hidden lg:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn bg-[#FF4240] text-white px-4 lg:px-6">Get Ticket</button>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+    <!-- main section start -->
+    <main class="mx-4 md:mx-6 lg:mx-36 my-12">
+        <!-- banner section start -->
+        <div class="carousel w-full h-[550px] rounded-2xl">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full object-cover" />
+                <div class="absolute flex gap-4 transform -translate-y-1/2 left-8 bottom-8">
+                    <a href="#slide4" class="btn btn-circle bg-[#131318] text-white border-0">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-0">❯</a>
+                </div>
+                <div class="bg-black text-white p-9 rounded-2xl absolute bottom-9 right-9 w-2/5">
+                    <h3 class="text-[24px] font-extrabold mb-4">Meet all the heroes from the field</h3>
+                    <p class="text-lg font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                        placerat dolor. Purus urna in sit nullam proin.</p>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/2.png" class="w-full object-cover" />
+                <div class="absolute flex gap-4 transform -translate-y-1/2 left-8 bottom-8">
+                    <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-0">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-[#131318] text-white border-0">❯</a>
+                </div>
+                <div class="bg-black text-white p-9 rounded-2xl absolute bottom-9 right-9 w-2/5">
+                    <h3 class="text-[24px] font-extrabold mb-4">Meet all the heroes from the field</h3>
+                    <p class="text-lg font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                        placerat dolor.
+                        Purus urna in sit nullam proin.</p>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/3.png" class="w-full object-cover" />
+                <div class="absolute flex gap-4 transform -translate-y-1/2 left-8 bottom-8">
+                    <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-0">❮</a>
+                    <a href="#slide4" class="btn btn-circle bg-[#131318] text-white border-0">❯</a>
+                </div>
+                <div class="bg-black text-white p-9 rounded-2xl absolute bottom-9 right-9 w-2/5">
+                    <h3 class="text-[24px] font-extrabold mb-4">Meet all the heroes from the field</h3>
+                    <p class="text-lg font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                        placerat dolor.
+                        Purus urna in sit nullam proin.</p>
+                </div>
+            </div>
+        </div>
+        <!-- banner section end -->
+
+        <!-- professional hockey club section start -->
+        <div class="my-28">
+            <div class="flex flex-col items-center gap-6 py-8 border-y-2  border-dashed ">
+                <h2 class="text-[36px] font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-lg text-gray-800">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+            <div class="flex gap-8 text-center my-14">
+                <div class="flex flex-col items-center gap-6">
+                    <img src="Images/progress1.png" alt="">
+                    <h4 class="text-[20px] font-semibold">Prayer Facility</h4>
+                    <p class="text-lg">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col items-center gap-6">
+                    <img src="Images/progress2.png" alt="">
+                    <h4 class="text-[20px] font-semibold">Experienced Coach</h4>
+                    <p class="text-lg">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col items-center gap-6">
+                    <img src="Images/progress3.png" alt="">
+                    <h4 class="text-[20px] font-semibold">Senior Player</h4>
+                    <p class="text-lg">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col items-center gap-6">
+                    <img src="Images/progress4.png" alt="">
+                    <h4 class="text-[20px] font-semibold">Training Ground</h4>
+                    <p class="text-lg">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </div>
+        <!-- professional hockey club section End -->
+        <!-- program section start -->
+        <div class="my-28">
+            <div class="flex flex-col items-center gap-6 py-8 border-y-2  border-dashed ">
+                <h2 class="text-[36px] font-extrabold">Program Sections</h2>
+                <p class="text-lg text-gray-800">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat
+                    dolor. Purus urna in sit nullam proin.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-7">
+                <div class="card bg-base-100 image-full">
+                    <figure><img src="Images/2.png" alt=""  class="w-full"/></figure>
+                    <div class="flex flex-col z-20 text-white items-start justify-end p-11">
+                        <h2 class="text-3xl font-extrabold mb-4">Junior Program</h2>
+                        <p class="font-medium text-lg">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="btn bg-[#FF4240] text-white border-0 mt-6">Register Now!</button>
+                    </div>
+                </div>
+                <div class="card bg-base-100 image-full">
+                    <figure><img src="Images/3.png" alt="" class="w-full" /></figure>
+                    <div class="flex flex-col z-20 text-white items-start justify-end p-11">
+                        <h2 class="text-3xl font-extrabold mb-4">Teenager Program</h2>
+                        <p class="font-medium text-lg">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="btn bg-[#FF4240] text-white border-0 mt-6">Register Now!</button>
+                    </div>
+                </div>
+                <div class="card bg-base-100 image-full col-span-2">
+                    <figure><img src="Images/4.png" alt="" class="w-full" /></figure>
+                    <div class="flex flex-col z-20 text-white items-start justify-end p-11">
+                        <h2 class="text-3xl font-extrabold mb-4">Teenager Program</h2>
+                        <p class="font-medium text-lg w-1/2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="btn bg-[#FF4240] text-white border-0 mt-6">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- program section end -->
+        <!-- our new product section start -->
+        <div class="my-28">
+            <div class="flex flex-col items-center gap-6 py-8 border-y-2  border-dashed ">
+                <h2 class="text-[36px] font-extrabold">Our New Products</h2>
+                <p class="text-lg text-gray-800">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat
+                    dolor. Purus urna in sit nullam proin.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-7 mt-14">
+                <div class="card card-side bg-base-100 p-7 border">
+                    <figure><img src="Images/5.png" alt="" /></figure>
+                    <div class="flex flex-col gap-3 ms-5">
+                        <div class="flex gap-4 text-lg font-medium">
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-rating.png" alt="">5.0</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-view.png"/>200</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-react.png" />20</p>
+                        </div>
+                        <h3 class="text-[20px] font-extrabold">Jacket For Hockeys</h3>
+                        <p class="text-lg font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex gap-5">
+                            <h4 class="text-xl font-extrabold text-[#FF4240]">Price - $<span>22.00</span></h4>
+                            <p class="flex gap-2 text-lg font-medium"><img src="Images/icon-cart.png" alt=""> Delivery Fee : <span>Free</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 p-7 border">
+                    <figure><img src="Images/6.png" alt="" /></figure>
+                    <div class="flex flex-col gap-3 ms-5">
+                        <div class="flex gap-4 text-lg font-medium">
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-rating.png" alt="">5.0</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-view.png"/>200</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-react.png" />20</p>
+                        </div>
+                        <h3 class="text-[20px] font-extrabold">World Cup Flags Football</h3>
+                        <p class="text-lg font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex gap-5">
+                            <h4 class="text-xl font-extrabold text-[#FF4240]">Price - $<span>22.00</span></h4>
+                            <p class="flex gap-2 text-lg font-medium"><img src="Images/icon-cart.png" alt=""> Delivery Fee : <span>Free</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 p-7 border">
+                    <figure><img src="Images/7.png" alt="" /></figure>
+                    <div class="flex flex-col gap-3 ms-5">
+                        <div class="flex gap-4 text-lg font-medium">
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-rating.png" alt="">5.0</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-view.png"/>200</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-react.png" />20</p>
+                        </div>
+                        <h3 class="text-[20px] font-extrabold">Cap For Hockeys</h3>
+                        <p class="text-lg font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex gap-5">
+                            <h4 class="text-xl font-extrabold text-[#FF4240]">Price - $<span>22.00</span></h4>
+                            <p class="flex gap-2 text-lg font-medium"><img src="Images/icon-cart.png" alt=""> Delivery Fee : <span>Free</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 p-7 border">
+                    <figure><img src="Images/8.png" alt="" /></figure>
+                    <div class="flex flex-col gap-3 ms-5">
+                        <div class="flex gap-4 text-lg font-medium">
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-rating.png" alt="">5.0</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-view.png"/>200</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-react.png" />20</p>
+                        </div>
+                        <h3 class="text-[20px] font-extrabold">World Cup Jersey Football</h3>
+                        <p class="text-lg font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex gap-5">
+                            <h4 class="text-xl font-extrabold text-[#FF4240]">Price - $<span>22.00</span></h4>
+                            <p class="flex gap-2 text-lg font-medium"><img src="Images/icon-cart.png" alt=""> Delivery Fee : <span>Free</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 p-7 border">
+                    <figure><img src="Images/9.png" alt="" /></figure>
+                    <div class="flex flex-col gap-3 ms-5">
+                        <div class="flex gap-4 text-lg font-medium">
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-rating.png" alt="">5.0</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-view.png"/>200</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-react.png" />20</p>
+                        </div>
+                        <h3 class="text-[20px] font-extrabold">Helmet For Hockeys</h3>
+                        <p class="text-lg font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex gap-5">
+                            <h4 class="text-xl font-extrabold text-[#FF4240]">Price - $<span>22.00</span></h4>
+                            <p class="flex gap-2 text-lg font-medium"><img src="Images/icon-cart.png" alt=""> Delivery Fee : <span>Free</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 p-7 border">
+                    <figure><img src="Images/10.png" alt="" /></figure>
+                    <div class="flex flex-col gap-3 ms-5">
+                        <div class="flex gap-4 text-lg font-medium">
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-rating.png" alt="">5.0</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-view.png" />200</p>
+                            <p class="text-lg flex items-center gap-2"><img src="Images/icon-react.png" />20</p>
+                        </div>
+                        <h3 class="text-[20px] font-extrabold">Premium quality Football</h3>
+                        <p class="text-lg font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex gap-5">
+                            <h4 class="text-xl font-extrabold text-[#FF4240]">Price - $<span>22.00</span></h4>
+                            <p class="flex gap-2 text-lg font-medium"><img src="Images/icon-cart.png" alt=""> Delivery Fee :
+                                <span>Free</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our new product section ends -->
+
+    </main>
+    <!-- main section end -->
 </body>
+
 </html>
