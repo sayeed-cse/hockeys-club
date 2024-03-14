@@ -1,0 +1,5 @@
+.join.join-vertical .join-item:last-child:not(:first-child),
+.join.join-vertical :last-child:not(:first-child) .join-item {
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+}
